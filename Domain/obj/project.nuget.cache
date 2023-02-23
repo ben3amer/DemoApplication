@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BV2eXU4F+NGygOdaffMoa/mC3tK8Xs6jZ33Whl3oGmytfhXhOf7WzoArS/i8eEupmm0U5/txdZOp4NwCPVfmRw==",
+  "dgSpecHash": "KVFOKu8FPzFX/Mwvz4eZSvnhSqgo1Jj3L1+ngHcnQLk/N0tW3mSDMa6IE5gIl5UypoG02KnUQ/SaiO6ulEA4JA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mohamed Amine\\RiderProjects\\Demo1\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

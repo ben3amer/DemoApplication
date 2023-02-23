@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jw7x1mESKQRNrT9KHe9QHvFuv5OjBJyuY3zN7/qr27HuiSsne1N1/yZSnECCc7Y4VY2FFaPGT/Yr6zS2+7WL1A==",
+  "dgSpecHash": "xcUKEmmv7DLrH1Jj+ECGz3Ldrwmjn60vKrqJ1hsLgG2xGUjZhZHtFqccxJocThJHUpgbUs3Ze/xAHkxVeVD21w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mohamed Amine\\RiderProjects\\Demo1\\WebUI\\WebUI.csproj",
+  "projectFilePath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mohamed Amine\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Mohamed Amine\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

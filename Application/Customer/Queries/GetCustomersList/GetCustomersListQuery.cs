@@ -19,12 +19,11 @@ public class GetCustomersListQuery : IRequest<GetCustomersListVm>
         }
         public async Task<GetCustomersListVm> Handle(GetCustomersListQuery request, CancellationToken cancellationToken)
         {
-            var customers =  _context.Customers;
-            var customresDtos = _mapper.Map<GetCustomersListVm>(customers);
-            //.ProjectTo<CustomerDto>(_mapper.ConfigurationProvider)
-                //.ToListAsync(cancellationToken);
+            var customers = await _context.Customers
+                            .ProjectTo<CustomerDto>(_mapper.ConfigurationProvider)
+                            .ToListAsync(cancellationToken);
 
-            return customresDtos;
+            return new GetCustomersListVm(customers);
         }
     }
 }   
