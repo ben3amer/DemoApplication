@@ -5,9 +5,7 @@
     <projectFile profileName="WebApplication1">WebApplication1/WebApplication1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="648b00d2-ce09-44af-a574-c856b87f1c30" name="Changes" comment="Last Update">
-      <change beforePath="$PROJECT_DIR$/WebUI/ClientApplication/front_end" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI/ClientApplication/front_end" afterDir="false" />
-    </list>
+    <list default="true" id="648b00d2-ce09-44af-a574-c856b87f1c30" name="Changes" comment="Last Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,16 +14,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6cc6dede52aab6345bbde5d36881fd55b017f53c84c78824d182f9a62c8291f/ISender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a62d52e4cd3e5325829357cce9d4e0b145cf712db36e988d1579943c9013160/IMediator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/DemoDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Persistence/DemoDbContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/ServicesConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2LmMfvLPoDjv991lzlfO99MSsv5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -97,7 +92,7 @@
       <workItem from="1676976316801" duration="5456000" />
       <workItem from="1677056127799" duration="9943000" />
       <workItem from="1677082845513" duration="964000" />
-      <workItem from="1677160852621" duration="719000" />
+      <workItem from="1677160852621" duration="1200000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1677023463118</created>
