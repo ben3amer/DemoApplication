@@ -1,27 +1,19 @@
-﻿using AutoMapper;
-using MediatR;
-using Application.Common;
-using AutoMapper.QueryableExtensions;
-using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Application.Repositories;
 
 namespace Application.Customer.Queries.GetCustomersList;
 public class GetCustomersListQuery : IRequest<GetCustomersListVm>
 {
     public class GetCustomersListQueryHandler : IRequestHandler<GetCustomersListQuery, GetCustomersListVm>
     {
-        private readonly IDemoDbContext _context;
-        private readonly IMapper _mapper;
-
-        public GetCustomersListQueryHandler(IDemoDbContext context, IMapper mapper)
+        private readonly ICustomerRepository _repository;
+        public GetCustomersListQueryHandler(ICustomerRepository repository)
         {
-            _context = context;
-            _mapper = mapper;
+            _repository = repository;
         }
         public async Task<GetCustomersListVm> Handle(GetCustomersListQuery request, CancellationToken cancellationToken)
         {
-            var customers = await _context.Customers
-                            .ProjectTo<CustomerDto>(_mapper.ConfigurationProvider)
-                            .ToListAsync(cancellationToken);
+            var customers = await _repository.GetAllAsync(cancellationToken);
 
             return new GetCustomersListVm(customers);
         }

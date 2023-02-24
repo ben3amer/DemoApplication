@@ -1,4 +1,5 @@
 ﻿using Application.Common;
+using Application.Repositories;
 using MediatR;
 using CustomerModel = Domain.Entities.Customer.Customer;
 
@@ -20,13 +21,11 @@ public class CreateCustomerCommand : IRequest
 
 public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerCommand>
 {
-    private readonly IDemoDbContext _dbContext;
-    private readonly IMediator _mediator;
+    private readonly ICustomerRepository _repository;
 
-    public CreateCustomerCommandHandler(IMediator mediator, IDemoDbContext dbContext)
+    public CreateCustomerCommandHandler(ICustomerRepository repository)
     {
-        _mediator = mediator;
-        _dbContext = dbContext;
+        _repository = repository;
     }
     public async Task<Unit> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
     {
@@ -37,12 +36,7 @@ public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerComman
             request.LastName,
             request.Phone
         );
-        _dbContext.Customers.Add(customer);
-        await _dbContext.SaveChangesAsync(cancellationToken);
-        await _mediator.Publish(new CustomerCreated
-        {
-            Id = customer.Id
-        }, cancellationToken);
+        await _repository.AddAsync(customer,cancellationToken);
         
         return Unit.Value;
     }

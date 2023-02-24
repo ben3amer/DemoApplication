@@ -5,5 +5,8 @@ public class GetCustomersListVm
     {
         Customers = customers;
     }
+    public GetCustomersListVm()
+    {
+    }
     public ICollection<CustomerDto> Customers { get; set; }
 }

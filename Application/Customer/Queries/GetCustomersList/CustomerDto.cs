@@ -10,7 +10,6 @@ public class CustomerDto : IMapFrom<CustomerModel>
     public string FirstName {get; set;}
     public string LastName {get; set;}
     public string Phone { get; set; }
-    
     public void Mapping(Profile profile)
     {
         profile.CreateMap<CustomerModel, CustomerDto>();
