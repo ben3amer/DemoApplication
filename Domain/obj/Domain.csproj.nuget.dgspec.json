@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\mabenameur\\source\\repos\\Demo\\Domain\\Domain.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\mabenameur\\source\\repos\\Demo\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\mabenameur\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mabenameur\\source\\repos\\Demo\\Domain\\obj\\",
+=======
+    "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Mohamed Amine\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\obj\\",
+>>>>>>> bb7327d1735142676141e759ab2cb35c083f7f67
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mabenameur\\AppData\\Roaming\\NuGet\\NuGet.Config",

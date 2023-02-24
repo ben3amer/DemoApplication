@@ -1592,11 +1592,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\mabenameur\\source\\repos\\Demo\\Application\\Application.csproj",
       "projectName": "Application",
       "projectPath": "C:\\Users\\mabenameur\\source\\repos\\Demo\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\mabenameur\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mabenameur\\source\\repos\\Demo\\Application\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Application\\Application.csproj",
+      "projectName": "Application",
+      "projectPath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Mohamed Amine\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Application\\obj\\",
+>>>>>>> bb7327d1735142676141e759ab2cb35c083f7f67
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mabenameur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1613,8 +1621,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\mabenameur\\source\\repos\\Demo\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\mabenameur\\source\\repos\\Demo\\Domain\\Domain.csproj"
+=======
+            "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Mohamed Amine\\RiderProjects\\DempApplication\\Domain\\Domain.csproj"
+>>>>>>> bb7327d1735142676141e759ab2cb35c083f7f67
             }
           }
         }

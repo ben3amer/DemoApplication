@@ -1,10 +1,8 @@
-﻿using Application.Common;
-using Application.Common.Exceptions;
+﻿using Application.Common.Exceptions;
+using Application.Repositories;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace Application.Customer.Command.UpdateCustomer;
-
 public class UpdateCustomerCommand : IRequest
 {
     public UpdateCustomerCommand(int id, string firstName, string lastName, string phone)
@@ -21,17 +19,14 @@ public class UpdateCustomerCommand : IRequest
     
     public class UpdateCustomerCommandHandler : IRequestHandler<UpdateCustomerCommand>
     {
-        private readonly IDemoDbContext _dbContext;
-
-        public UpdateCustomerCommandHandler(IDemoDbContext dbContext)
+        private readonly ICustomerRepository _repository;
+        public UpdateCustomerCommandHandler(ICustomerRepository repository)
         {
-            _dbContext = dbContext;
+            _repository = repository;
         }
         public async Task<Unit> Handle(UpdateCustomerCommand request, CancellationToken cancellationToken)
         {
-            var entity = await _dbContext.Customers
-                .SingleOrDefaultAsync(c => c.Id == request.Id, cancellationToken);
-
+            var entity = await _repository.GetByIdAsync(request.Id);
             if (entity == null)
             {
                 throw new NotFoundException(nameof(Customer), request.Id);
@@ -40,7 +35,7 @@ public class UpdateCustomerCommand : IRequest
             entity.LastName = request.LastName;
             entity.Phone = request.Phone;
             
-            await _dbContext.SaveChangesAsync(cancellationToken);
+            await _repository.UpdateAsync(entity,cancellationToken);
 
             return Unit.Value;
         }
